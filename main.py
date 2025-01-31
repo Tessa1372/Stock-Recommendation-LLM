@@ -31,9 +31,7 @@ st.sidebar.markdown(s)
 
 # Main execution if Groq API key is provided
 if groq_api_key:
-    # Initialize Groq-based LLM (replace ChatOpenAI with the equivalent Groq method)
-    # You may need to use GroqFlow, Groq API, or relevant package
-    # Assuming Groq has similar temperature and model settings
+
     llm = ChatGroq(temperature=0, model_name='mixtral-8x7b-32768', groq_api_key=groq_api_key)
 
     # Function to get historical stock prices
